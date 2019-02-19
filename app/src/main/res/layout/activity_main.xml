@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:paddingTop="14dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/et_Name"
+        android:inputType="textCapWords"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toppings"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAllCaps="true"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_whipped_cream"
+        android:text="Whipped Cream"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/cb_chocolate"
+        android:layout_marginTop="4dp"
+        android:text="Chocholate"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAllCaps="true"
+       />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/subtractCoffee"
+            android:text="-"
+            android:onClick="dropCoffee"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:id="@+id/tv_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_marginBottom="16dp"
+            android:id="@+id/addCoffee"
+            android:text="+"
+            android:onClick="topUpCoffee"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Oder Summary"
+        android:textColor="#000000"
+        android:textAllCaps="true"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_oder_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="$0"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_marginLeft="16dp"
+        android:id="@+id/btn_Oder"
+        android:text="ODER"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitOder"/>
+
+</LinearLayout>
+</ScrollView>
